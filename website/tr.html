@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Detail - Nebula Vase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#de2bee",
+                        "background-light": "#f8f6f8",
+                        "background-dark": "#201022",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "luxury": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .champagne-gradient {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+        .ocean-gradient {
+            background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+        }
+        .nebula-glow {
+            box-shadow: 0 0 30px rgba(222, 43, 238, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-6 transition-all">
+<div class="flex size-11 items-center justify-center rounded-full bg-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-white">arrow_back_ios_new</span>
+</div>
+<div class="flex gap-3">
+<div class="flex size-11 items-center justify-center rounded-full bg-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-white">share</span>
+</div>
+<div class="flex size-11 items-center justify-center rounded-full bg-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-white">favorite</span>
+</div>
+</div>
+</div>
+<!-- Hero Section (Header Image) -->
+<div class="relative w-full h-[60vh] champagne-gradient overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-multiply opacity-40" data-alt="Close up of high quality champagne silk fabric texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ8ya0fDuVN4FKEfIxYyVn-rxgCOYxvmK-YtiUnLks_WT3YiKYeGPq9IKxoOSEgmevHi1QDwci5Mi2xrr1R8usbyZT81S8R8GrNA81lrytrdabn1jgXA_JhaGEZvWs8mQ60yzLNYTcrHVVWLaCFJESP6rZcn1etUVhbP1ZMJ_Jpckjs5TSK5YhyEqfB84DLMQJf3crfCC3CBq9r6ZD0YrvqhUXh_YtRfwstCIQE8AtzC1jaI-QMD391Qa0vT06aAKy-napBJ7Fe9XA')"></div>
+<!-- Best Seller Badge -->
+<div class="absolute top-24 right-6 z-10">
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-primary px-4 shadow-lg nebula-glow">
+<span class="material-symbols-outlined text-white text-[20px]">star</span>
+<p class="text-white text-sm font-bold uppercase tracking-wider">Best Seller</p>
+</div>
+</div>
+<!-- Product Image -->
+<div class="absolute inset-0 flex items-center justify-center p-12 mt-10">
+<img alt="Nebula Glass Vase" class="max-h-full drop-shadow-2xl object-contain" data-alt="Hand-blown nebula glass vase with iridescent purple and blue swirls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCj0W8c-JgFLjIrgihXiXTaeiTFoOY8Jn_EtC8on8QN-16GVesaqM-y7vIQuS6iaPMJ0Jgsis1S05ZiVMI9fttHEsAYihKFh_fvHS7_4_oYj7CFOTsnKrxM47q2vJDuiIw8ko6E_8orky6rqg5qVaQnNhfh9b53cJKs7p9ThBS0IvnA6NQ3A0wXf8ErcA-7txS7TnsEoXoW8226LCegUmMsEfbH2oU57aQOsGdxcR4D6MDF0lcT7TH4AZhJF113pa3AxM4RJdTsS7x"/>
+</div>
+</div>
+<!-- Product Details Bottom Sheet -->
+<div class="relative -mt-12 flex-1 rounded-t-xl bg-background-light dark:bg-background-dark/80 backdrop-blur-xl border-t border-white/10 px-6 pt-2 pb-32">
+<!-- Handle -->
+<div class="flex h-1.5 w-12 mx-auto rounded-full bg-slate-300 dark:bg-slate-700 my-4"></div>
+<!-- Title & Price -->
+<div class="flex justify-between items-start pt-4 pb-6">
+<div class="space-y-1">
+<h1 class="font-luxury text-4xl text-slate-900 dark:text-white">Nebula Glass Vase</h1>
+<p class="text-primary font-bold text-xl">$240.00</p>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 flex-wrap mb-8">
+<div class="flex h-9 items-center justify-center gap-x-2 rounded-full bg-primary/10 border border-primary/20 px-4">
+<span class="material-symbols-outlined text-primary text-[18px]">temp_preferences_custom</span>
+<p class="text-primary text-xs font-bold uppercase">Handcrafted</p>
+</div>
+<div class="flex h-9 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 px-4">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-[18px]">eco</span>
+<p class="text-slate-600 dark:text-slate-300 text-xs font-bold uppercase">Eco-Friendly</p>
+</div>
+</div>
+<!-- Description -->
+<div class="mb-8">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Inspired by the celestial beauty of distant star clusters, this hand-blown iridescent glass vase features fluid swirls of deep amethyst and cosmic cyan. Each piece is unique, capturing a moment of frozen starlight for your home.
+                </p>
+</div>
+<!-- Features Grid -->
+<div class="grid grid-cols-2 gap-4 mb-10">
+<div class="flex items-center gap-3 p-4 rounded-lg glass-panel">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/20">
+<span class="material-symbols-outlined text-primary">diamond</span>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold text-slate-500">Material</p>
+<p class="text-sm font-medium">Crystal Glass</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg glass-panel">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/20">
+<span class="material-symbols-outlined text-primary">straighten</span>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold text-slate-500">Height</p>
+<p class="text-sm font-medium">12.5 Inches</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg glass-panel">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/20">
+<span class="material-symbols-outlined text-primary">palette</span>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold text-slate-500">Color</p>
+<p class="text-sm font-medium">Iridescent Blue</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg glass-panel">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/20">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold text-slate-500">Warranty</p>
+<p class="text-sm font-medium">2 Years</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light dark:via-background-dark/90 to-transparent z-50">
+<button class="ocean-gradient w-full h-16 rounded-full flex items-center justify-center gap-3 shadow-2xl transition-transform active:scale-95">
+<span class="material-symbols-outlined text-white">shopping_bag</span>
+<span class="text-white text-lg font-bold tracking-wide">Add to Cart</span>
+</button>
+</div>
+</div>
+</body></html>
